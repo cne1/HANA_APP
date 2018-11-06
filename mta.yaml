@@ -25,15 +25,10 @@ modules:
       - name: core_xsjs_api
         properties:
           url: '${default-url}'
-      - name: ''
     requires:
       - name: UAA-service
       - name: hdi_db
       - name: db
-    properties:
-      name: core-xsjs-backend
-      url: '~{url}'
-      forwardAuthToken: true
 resources:
   - name: UAA-service
     type: com.sap.xs.uaa-space
